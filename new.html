@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style/new.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-black navbar-dark px-5 py-4 mynavbar sticky-top">
+        <a class="nav-link" href="index.html" style="color: aqua;font-size: 35px;">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="collapsibleNavbar" style="padding-left: 17px;">
+            <ul class="navbar-nav navlist">
+                <li class="nav-item">
+                    <a class="nav-link" href="old.html">Old tax slab</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="latest.html">Latest Slabs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#newcalci">Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg p-3">
+        <div class="container-fluid p-3" id="tagline" style="font-family: cursive;">New tax slab</div>
+        <div class="container p-3">
+            <div style="text-align: center;">
+                <img src="photoes/new_table.jpg" class="img-fluid">
+            </div>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col-lg-4 col-sm-12 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Anual CTC </h5>
+                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Income from rent in positive, and loan payments in negative
+                        </h5>
+                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Income from any other sources</h5>
+                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 7px;margin-bottom: 7px;"><button type="submit" class="btn btn-primary"
+                onclick="getval()">Submit</button>
+        </p>
+        <div style="display: flex; justify-content: space-around;">
+            <div style="color: wheat;">Taxable Income : <span id="taxable_income"></span></div>
+            <div style="color: wheat;">Total Tax is : <span id="total_tax"></span></div>
+        </div>
+        <span id="newcalci"></span>
+            </div>
+
+
+
+
+
+            <script src="script/new.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
