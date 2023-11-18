@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{    
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(../photoes/101.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100%; */
+    height: 100%;
+    padding-bottom: 16px;
+}
+
+#tagline {
+    color: white;
+    text-align: center;
+}
+
+.leftouter{
+    background-color: aqua;
+    width: 5px;
+    height: 100%;
+}
+.leftinner{
+    animation: left 3s ease-in-out none infinite;
+    width: 5px;
+    background-color: orange;
+}
+
+
+.input_filed{
+    color: black;
+    background-color: rgb(170, 255, 255);
+    border: none;
+    font-size: large;
+    text-align: center;
+}
+.bg{    
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../photoes/104.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgcard{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../photoes/107.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+@keyframes left {
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 0vw;
+    }
+}
+.rightouter{
+    background-color: orange;
+    width: 5px;
+    height: 100%;
+}
+.rightinner{
+    animation: right 3s ease-in-out none infinite;
+    width: 5px;
+    background-color: aqua;
+}
+@keyframes right {
+    0%{
+        height: 0vw;
+    }
+    100%{
+        height: 100%;
+    }
+}
+#tagline{
+    border: 4px solid white;
+    width: fit-content;
+}
+
+
+
+
+@media (max-width:385px) {
+    #tagline{
+        font-size: 18px;
+    }
+    .questionare{
+        color: white;
+        font-size: 12px;
+    }
+}
+
+@media (min-width:386px) {
+    #tagline{
+        font-size: medium;
+    }
+    .questionare{
+        color: white;
+        font-size: medium;
+    }
+}
+@media (min-width:577px) {
+    #tagline{
+        font-size: 36px;
+    }
+    .questionare{
+        color: white;
+        font-size: large;
+    }
+}
+
+@media (min-width:720px) {
+    #tagline{
+        font-size: 42px;
+    }
+    .questionare{
+        color: white;
+        font-size: large;
+    }
+}
+
+@media (min-width:960px) {
+    #tagline{
+        font-size: 60px;
+    }
+    .questionare{
+        color: white;
+        font-size: x-large;
+    }
+}
+
+
+.boraround{    
+    animation: borrrr 4s ease-in-out none infinite;
+}
+@keyframes borrrr {
+    0%{
+        border: 7px solid aqua;
+    }
+    50%{
+        border: 7px solid yellow;
+    }
+    100%{
+        border: 7px solid aqua;
+    }
+}

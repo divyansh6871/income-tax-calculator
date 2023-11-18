@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* max-height: 100vh; */
+}
+
+.bg{    
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../photoes/104.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgcard{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../photoes/107.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
