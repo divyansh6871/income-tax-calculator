@@ -15,28 +15,37 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md bg-black navbar-dark px-5 py-4 mynavbar">
+    <nav class="navbar navbar-expand-md bg-black px-5 py-2 mynavbar sticky-top" 
+    style="
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(photoes/navbar_back.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
         <a class="nav-link" href="index.html" style="color: aqua;font-size: 35px;">HOME</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" style="border-radius: 50%;border: 3px solid white;background-color: aqua;"></span>
         </button>
         <div class="collapse navbar-collapse " id="collapsibleNavbar" style="padding-left: 17px;">
             <ul class="navbar-nav navlist">
                 <li class="nav-item">
-                    <a class="nav-link" href="new.html">New tax slab(till March2023)</a>
+                    <a class="nav-link navitem" href="new.html">New tax slab till March 2023</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="latest.html">Latest Slabs</a>
+                    <a class="nav-link navitem" href="latest.html">Latest Slabs after March 2023</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#oldcalci">Calculator</a>
+                    <a class="nav-link navitem" href="#oldcalci">Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navitem" href="compare.html">Compare all</a>
                 </li>
             </ul>
         </div>
     </nav>   
 
 
-    <div class="container-fluid bg p-3">
+    <div class="container-fluid p-3">
         <div class="container-fluid p-3" id="tagline" style="font-family: cursive;">Old tax slab</div>
         <div class="container p-3">
             <div style="text-align: center;">
@@ -48,7 +57,7 @@
                 <div class="card bgcard boraround" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title">Anual CTC </h5>
-                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input1">
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input1">
                     </div>
                 </div>
             </div>
@@ -56,7 +65,7 @@
                 <div class="card bgcard boraround" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title">House rent alowance : </h5>
-                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input2">
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input2">
                     </div>
                 </div>
             </div>
@@ -64,7 +73,7 @@
                 <div class="card bgcard boraround" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title">Leave travel alowance</h5>
-                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input3">
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input3">
                     </div>
                 </div>
             </div>
@@ -73,7 +82,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Income from rent in positive, loan payments in negative
                         </h5>
-                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input4">
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input4">
                     </div>
                 </div>
             </div>
@@ -81,7 +90,7 @@
                 <div class="card bgcard boraround" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title">Income from any other sources</h5>
-                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input5">
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input5">
                     </div>
                 </div>
             </div>
@@ -89,7 +98,7 @@
                 <div class="card bgcard boraround" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title">Savings in PF, LIC, Tution fees of children, PPF, NSC</h5>
-                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input6">
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input6">
                     </div>
                 </div>
             </div>
@@ -97,7 +106,7 @@
                 <div class="card bgcard boraround" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title">Savings in mediclaim</h5>
-                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input7">
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input7">
                     </div>
                 </div>
             </div>
@@ -105,7 +114,7 @@
                 <div class="card bgcard boraround" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title">child tution fees</h5>
-                        <input class="input_filed" type="number" placeholder="0" style="width: 40%;" id="input8">
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input8">
                     </div>
                 </div>
             </div>
