@@ -14,28 +14,38 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md bg-black navbar-dark px-5 py-4 mynavbar sticky-top">
-        <a class="nav-link" href="#" style="color: aqua;font-size: 35px;">HOME</a>
+    <nav class="navbar navbar-expand-md px-5 py-2 mynavbar sticky-top" 
+    style="
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(photoes/navbar_back.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
+        <a class="nav-link" href="index.html" style="color: aqua;font-size: 35px;">HOME</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" style="border-radius: 50%;border: 3px solid white;background-color: aqua;"></span>
         </button>
         <div class="collapse navbar-collapse " id="collapsibleNavbar" style="padding-left: 17px;">
             <ul class="navbar-nav navlist">
                 <li class="nav-item">
-                    <a class="nav-link" href="old.html">Old tax slab</a>
+                    <a class="nav-link navitem" href="old.html">Old tax slab before 2020</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="new.html">New tax slab</a>
+                    <a class="nav-link navitem" href="new.html">New tax slab till March 2023</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="latest.html">Latest Slabs</a>
+                    <a class="nav-link navitem" href="latest.html">Latest Slabs after March 2023</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navitem" href="compare.html">Compare all</a>
                 </li>
             </ul>
         </div>
-        <div>Lorem, ipsum.</div>
     </nav>
 
-    <div class="container-fluid p-3" id="tagline" style="font-family: cursive;">Get the accurate tax to be paid</div>
+    <div class="p-4">
+        <div class="container-fluid p-3" id="tagline" style="font-family: cursive;">Get the accurate tax to be paid</div>
+    </div>
 
     <div class="container">
         <div class="questionare">
@@ -46,8 +56,8 @@
     
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-3">
+        <div class="row px-3">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-3">
                 <div class="row" style="padding-right: 17px;">
                     <div class="col-1">
                         <div class="leftouter">
@@ -59,27 +69,43 @@
                         <div class="card">
                             <img class="card-img-top" height="350px" src="photoes/old.jpeg" alt="Card image cap">
                             <div class="card-body" style="text-align: center;">
-                                <button class="btn btn-dark"><a href="old.html" style="color: white;text-decoration: none;">Old tax slabs</a></button>
+                                <button class="btn btn-dark"><a href="old.html" style="color: white;text-decoration: none;">Old tax slab before 2020</a></button>
                             </div>
                           </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-3">
-                <div class="row" >
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-3">
+                <div class="row" ><div class="col-1">
+                    <div class="leftouter">
+                        <div class="leftinner">
+                        </div>
+                    </div>
+                </div>
                     <div class="col-11">
                         <div class="card">
                             <img class="card-img-top" height="350px" src="photoes/new.jpg" alt="Card image cap">
                             <div class="card-body" style="text-align: center;">
-                              <a href="new.html" class="btn btn-dark" style="color: white;text-decoration: none;">New tax slab</a>
+                              <a href="new.html" class="btn btn-dark" style="color: white;text-decoration: none;">New tax slab till March 2023</a>
                             </div>
                           </div>
                     </div>
-                    <div class="col-1">
-                        <div class="rightouter">
-                            <div class="rightinner">
-                            </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-3">
+                <div class="row" ><div class="col-1">
+                    <div class="leftouter">
+                        <div class="leftinner">
                         </div>
+                    </div>
+                </div>
+                    <div class="col-11">
+                        <div class="card">
+                            <img class="card-img-top" height="350px" src="photoes/crypto.jpg" alt="Card image cap">
+                            <div class="card-body" style="text-align: center;">
+                              <a href="latest.html" class="btn btn-dark" style="color: white;text-decoration: none;">New tax slab since March 2023</a>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
