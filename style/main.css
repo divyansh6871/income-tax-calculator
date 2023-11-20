@@ -153,6 +153,9 @@ body {
         color: white;
         font-size: 12px;
     }
+    .mainphoto{
+        height: 175px;
+    }
 }
 
 @media (min-width:386px) {
@@ -163,6 +166,9 @@ body {
     .questionare {
         color: white;
         font-size: medium;
+    }
+    .mainphoto{        
+        height: 200px;
     }
 }
 
@@ -175,6 +181,9 @@ body {
         color: white;
         font-size: large;
     }
+    .mainphoto{   
+        height: 200px;
+    }
 }
 
 @media (min-width:720px) {
@@ -186,6 +195,9 @@ body {
         color: white;
         font-size: large;
     }
+    .mainphoto{   
+        height: 250px;
+    }
 }
 
 @media (min-width:960px) {
@@ -196,6 +208,10 @@ body {
     .questionare {
         color: white;
         font-size: x-large;
+    }
+    .mainphoto{   
+        height: 250px;
+
     }
 }
 
