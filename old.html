@@ -48,8 +48,34 @@
     <div class="container-fluid p-3">
         <div class="container-fluid p-3" id="tagline" style="font-family: cursive;">Old tax slab</div>
         <div class="container p-3">
-            <div style="text-align: center;">
-                <img src="photoes/old_table.jpg" class="img-fluid">
+            <div class="container" style="text-align: center;">
+                <!-- <img src="photoes/old_table.jpg" class="img-fluid"> -->
+                <table class="table table-striped table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">Income slab</th>
+                        <th scope="col">Tax rates</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Upto 2.5 lakh</th>
+                        <td>Nil</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2.5 lakh to 5 lakh</th>
+                        <td>5 percent</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5 lakh to 10 lakh</th>
+                        <td>20 percent</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">above 10 lakh</th>
+                        <td>30 percent</td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
         </div>
         <div class="row" style="text-align: center;">
@@ -122,12 +148,9 @@
         <p style="text-align: center; margin-top: 7px;margin-bottom: 7px;"><button type="submit" class="btn btn-primary"
                 onclick="getval()">Submit</button>
         </p>
-        <div style="display: flex; justify-content: space-around;">
-            <div style="color: wheat;">Taxable Income : <span id="taxable_income"></span></div>
-            <div style="color: wheat;">Total Tax is : <span id="total_tax"></span></div>
-        </div>
         
     <span id="oldcalci"></span>
+    <div id="conclusion" style="text-align: center;margin-top: 5px;"></div>
     </div>
 
 
